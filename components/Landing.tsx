@@ -8,7 +8,7 @@ export default function Landing() {
     return (
         <section className="text-center p-10">
             <div className="rounded-full flex py-10 h-3/4">
-                <Image src={me} className="rounded-full mx-auto"></Image>
+                <Image src={me} alt="Photo of Prabhu Marappan" className="rounded-full mx-auto"></Image>
             </div>
             <div>
                 <h2 className="text-6xl py-10">Prabhu Marappan</h2>
