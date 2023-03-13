@@ -1,6 +1,8 @@
+import Landing from "@/components/Landing";
 import About from "@/components/About";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
+import Projects from "@/components/Projects";
 
 export default function Home() {
     return (
@@ -17,9 +19,11 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className="bg-white px-10">
+            <main className="bg-gray-200">
                 <Navbar />
+                <Landing />
                 <About />
+                <Projects />
             </main>
         </>
     );
