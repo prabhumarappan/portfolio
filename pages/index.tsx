@@ -20,7 +20,7 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className="bg-gray-200">
+            <main className="bg-gray-100">
                 <Navbar />
                 <Landing />
                 <About />
