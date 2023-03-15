@@ -59,7 +59,7 @@ export default function Projects() {
     return (
         <section id="projects" className="text-center p-10">
             <h1 className="text-5xl text-center">Projects</h1>
-            <div className="flex-wrap flex md:w-5/6 xl:w-4/6 mx-auto">
+            <div className="flex-wrap flex md:w-4/6 xl:w-3/6 mx-auto">
                 {allProjects.map((project: Project) => (
                     <div
                         className="justify-center w-full bg-white m-5 p-5 rounded-lg shadow-xl"
