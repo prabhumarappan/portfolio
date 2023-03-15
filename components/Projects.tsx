@@ -87,7 +87,7 @@ export default function Projects() {
 
                             <p className="lg:w-2/3 sm:pt-5 md:float-right pl-5 text-lg">
                                 {project.description.map((desc) => (
-                                    <span key={desc}>{desc}</span>
+                                    <li key={desc}>{desc}</li>
                                 ))}
                             </p>
                         </div>
