@@ -59,7 +59,7 @@ export default function Projects() {
     return (
         <section id="projects" className="text-center p-10">
             <h1 className="text-5xl text-center">Projects</h1>
-            <div className="flex-wrap flex md:w-4/6 xl:w-3/6 mx-auto">
+            <div className="flex-wrap flex md:w-4/6 lg:max-w-3xl mx-auto">
                 {allProjects.map((project: Project) => (
                     <div
                         className="justify-center w-full bg-white m-5 p-5 rounded-lg shadow-xl"
@@ -82,14 +82,16 @@ export default function Projects() {
                             <Image
                                 src={project.image}
                                 alt={`Photo of ${project.title}`}
-                                className="md:w-full lg:w-1/3 block md:float-left"
+                                className="md:w-full my-5 lg:w-1/3 block md:float-left"
                             ></Image>
 
-                            <p className="lg:w-2/3 sm:pt-5 md:float-right pl-5 text-lg">
-                                {project.description.map((desc) => (
-                                    <li key={desc}>{desc}</li>
-                                ))}
-                            </p>
+                            <div className="lg:w-2/3 sm:pt-5 md:float-right pl-5 text-lg">
+                                <ul className="list-disc">
+                                    {project.description.map((desc) => (
+                                        <li key={desc}>{desc}</li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 ))}
