@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import Projects from "@/components/Projects";
 import Work from "@/components/Work";
+import ContactMe from "@/components/ContactMe";
 
 export default function Home() {
     return (
@@ -26,6 +27,7 @@ export default function Home() {
                 <About />
                 <Projects />
                 <Work />
+                <ContactMe />
             </main>
         </>
     );
