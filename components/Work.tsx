@@ -111,7 +111,7 @@ export default function Work() {
                             <Link href={experience.linkedIn} target="_blank">
                                 <Image
                                     src={experience.img}
-                                    alt="hello"
+                                    alt={`Logo of ${experience.name}`}
                                     width={50}
                                     height={50}
                                     className="mx-auto"

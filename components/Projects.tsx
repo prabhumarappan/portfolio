@@ -81,7 +81,7 @@ export default function Projects() {
                         <div className="w-full mt-5 md:flow-root">
                             <Image
                                 src={project.image}
-                                alt="Photo of CTRAN"
+                                alt={`Photo of ${project.title}`}
                                 className="md:w-full lg:w-1/3 block md:float-left"
                             ></Image>
 
