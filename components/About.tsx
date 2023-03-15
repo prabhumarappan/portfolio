@@ -1,3 +1,34 @@
+const skills = [
+    "Python",
+    "Go",
+    "Javascript",
+    "Java",
+    "MongoDB",
+    "PostgreSQL",
+    "InfluxDB",
+    "Redis",
+    "MySQL",
+    "ActiveMQ",
+    "RabbitMQ",
+    "SQS",
+    "Amazon Web Services",
+    "Google Cloud Platform",
+    "Docker",
+    "Git",
+    "FluentD",
+    "Kibana",
+    "Elasticsearch",
+    "Microservices",
+    "Django",
+    "Flask",
+    "React",
+    "NextJS",
+    "NodeJS",
+    "FastAPI",
+    "GraphQL",
+    "OAuth",
+];
+
 export default function About() {
     return (
         <section id="about" className="text-center">
@@ -23,43 +54,11 @@ export default function About() {
                 <h1 className="text-5xl">Skills</h1>
                 <ul className="py-10 pb-0 mx-auto flex flex-wrap">
                     <li className="p-4 m-2 bg-cyan-400 rounded-xl">Python</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">Go</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">
-                        Javascript
-                    </li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">Java</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">MongoDB</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">
-                        PostgreSQL
-                    </li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">InfluxDB</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">Redis</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">MySQL</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">ActiveMQ</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">RabbitMQ</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">SQS</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">
-                        Amazon Web Services
-                    </li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">
-                        Google Cloud Platform
-                    </li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">Docker</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">Git</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">FluentD</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">Kibana</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">
-                        ElasticSearch
-                    </li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">
-                        Microservices
-                    </li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">Django</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">React</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">Next.js</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">FastAPI</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">GraphQL</li>
-                    <li className="p-4 m-2 bg-cyan-400 rounded-xl">OAuth</li>
+                    {skills.map((skill) => (
+                        <li className="p-4 m-2 bg-cyan-400 rounded-xl">
+                            {skill}
+                        </li>
+                    ))}
                 </ul>
             </div>
         </section>
