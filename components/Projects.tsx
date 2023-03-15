@@ -61,7 +61,10 @@ export default function Projects() {
             <h1 className="text-5xl text-center">Projects</h1>
             <div className="flex-wrap flex md:w-5/6 xl:w-4/6 mx-auto">
                 {allProjects.map((project: Project) => (
-                    <div className="justify-center w-full bg-white m-5 p-5 rounded-lg shadow-xl">
+                    <div
+                        className="justify-center w-full bg-white m-5 p-5 rounded-lg shadow-xl"
+                        key={project.title}
+                    >
                         <div className="w-full flex">
                             <h2 className="text-4xl mx-auto">
                                 {project.title}
@@ -83,7 +86,7 @@ export default function Projects() {
 
                             <p className="lg:w-2/3 sm:pt-5 md:float-right pl-5 text-lg">
                                 {project.description.map((desc) => (
-                                    <span>{desc}</span>
+                                    <span key={desc}>{desc}</span>
                                 ))}
                             </p>
                         </div>

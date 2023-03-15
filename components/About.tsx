@@ -54,7 +54,10 @@ export default function About() {
                 <h1 className="text-5xl">Skills</h1>
                 <ul className="py-10 pb-0 mx-auto flex flex-wrap">
                     {skills.map((skill) => (
-                        <li className="p-3 m-1 sm:text-xs md:text-md lg:text-lg bg-gray-300 rounded-xl">
+                        <li
+                            className="p-3 m-1 sm:text-xs md:text-md lg:text-lg bg-gray-300 rounded-xl"
+                            key={skill}
+                        >
                             {skill}
                         </li>
                     ))}
