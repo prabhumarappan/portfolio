@@ -19,6 +19,7 @@ export default function Projects() {
                         <a
                             href="https://github.com/prabhumarappan/cs510-data-engineering"
                             className="text-xl"
+                            target="_blank"
                         >
                             <BsGithub className="text-4xl" />
                         </a>
@@ -29,18 +30,14 @@ export default function Projects() {
                             alt="Photo of CTRAN"
                             className="w-1/3 block md:float-left"
                         ></Image>
-                        <p className="w-2/3 sm:pt-5 md:float-right pl-5 text-xl">
-                            • Designed a dependable model data collection using
-                            Google Cloud Platform APIs, including producer and
-                            consumer problems using JSON data and verifying them
-                            with Python scripts which diminished by 30% time.{" "}
-                            <br />
-                            • filtered the data using decoding and filling
-                            approaches by interpolating and altering
-                            visualizations with 90% accuracy.
-                            <br />• Created the MySQL database, processed batch
-                            data, and implemented visualizations used in local
-                            transportation systems.
+                        <p className="w-2/3 sm:pt-5 md:float-right pl-5 text-lg">
+                            • Designed and implemented a data pipeline to
+                            process daily data from CTRAN APIs and push them to
+                            PostgreSQL database using Kafka producer and
+                            consumer
+                            <br />• Created the PostgreSQL database, processed
+                            batch data, and implemented visualizations used in
+                            local transportation systems.
                         </p>
                     </div>
                 </div>
@@ -50,6 +47,7 @@ export default function Projects() {
                         <a
                             href="https://github.com/prabhumarappan/CS594-project"
                             className="text-xl"
+                            target="_blank"
                         >
                             <BsGithub className="text-4xl" />
                         </a>
@@ -60,19 +58,16 @@ export default function Projects() {
                             alt="Photo of IRC"
                             className="w-1/3 block md:float-left"
                         ></Image>
-                        <p className="w-2/3 sm:pt-5 md:float-right pl-5 text-xl">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap
-                            into electronic typesetting, remaining essentially
-                            unchanged. It was popularised in the 1960s with the
-                            release of Letraset sheets containing Lorem Ipsum
-                            passages, and more recently with desktop publishing
-                            software like Aldus PageMaker including versions of
-                            Lorem Ipsum.
+                        <p className="w-2/3 sm:pt-5 md:float-right pl-5 text-lg">
+                            • Internet Relay Chat Service project that allows
+                            users to run a server and connect to other users
+                            through the client program
+                            <br />
+                            • Implemented the server and client programs using
+                            Python sockets and threads to handle multiple
+                            clients
+                            <br />• Send Message, Chatrooms, Private Message
+                            were few of the features implemented
                         </p>
                     </div>
                 </div>
@@ -84,6 +79,7 @@ export default function Projects() {
                         <a
                             href="https://github.com/prabhumarappan/prabhu-lotr-SDK"
                             className="text-xl"
+                            target="_blank"
                         >
                             <BsGithub className="text-4xl" />
                         </a>
@@ -94,19 +90,16 @@ export default function Projects() {
                             alt="Photo of Lord of the Rings"
                             className="w-1/3 block md:float-left"
                         ></Image>
-                        <p className="w-2/3 sm:pt-5 md:float-right pl-5 text-xl">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap
-                            into electronic typesetting, remaining essentially
-                            unchanged. It was popularised in the 1960s with the
-                            release of Letraset sheets containing Lorem Ipsum
-                            passages, and more recently with desktop publishing
-                            software like Aldus PageMaker including versions of
-                            Lorem Ipsum.
+                        <p className="w-2/3 sm:pt-5 md:float-right pl-5 text-lg">
+                            • Lord of the Rings (LOTR) project was an SDK
+                            created in Python that allows developers to fetch
+                            LOTR resources like boook, chapter, character,
+                            movies and quotes directly from the terminal!
+                            <br />
+                            • Developed a python package and published it to
+                            PyPI
+                            <br />• Created a well documented README on how to
+                            use the SDK
                         </p>
                     </div>
                 </div>
@@ -116,6 +109,7 @@ export default function Projects() {
                         <a
                             href="https://github.com/prabhumarappan/cryptoning"
                             className="text-xl"
+                            target="_blank"
                         >
                             <BsGithub className="text-4xl" />
                         </a>
@@ -126,19 +120,15 @@ export default function Projects() {
                             alt="Photo of Crypto Market"
                             className="w-1/3 block md:float-left"
                         ></Image>
-                        <p className="w-2/3 sm:pt-5 md:float-right pl-5 text-xl">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap
-                            into electronic typesetting, remaining essentially
-                            unchanged. It was popularised in the 1960s with the
-                            release of Letraset sheets containing Lorem Ipsum
-                            passages, and more recently with desktop publishing
-                            software like Aldus PageMaker including versions of
-                            Lorem Ipsum.
+                        <p className="w-2/3 sm:pt-5 md:float-right pl-5 text-lg">
+                            • Created a React app to add cryptocurrencies to a
+                            watchlist and track them
+                            <br />
+                            • Used Twitter APIs to read tweets about a selected
+                            cryptocurrency and display them
+                            <br />• Used Coinmarketcap and Cryptocompare to get
+                            latest prices and history for a selected
+                            cryptocurrency
                         </p>
                     </div>
                 </div>
