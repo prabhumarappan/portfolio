@@ -1,4 +1,4 @@
-import { BsMoonStarsFill } from "react-icons/bs";
+import Weather from "./Weather";
 
 export default function Navbar() {
     const moveToView = (e: React.MouseEvent<HTMLElement>, ele: string) => {
@@ -65,7 +65,7 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li className="p-5">
-                        <BsMoonStarsFill className="text-2xl" />
+                        <Weather />
                     </li>
                 </ul>
             </nav>
