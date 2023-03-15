@@ -57,7 +57,7 @@ const allProjects = [
 
 export default function Projects() {
     return (
-        <section id="projects" className="text-center p-10 pt-0">
+        <section id="projects" className="text-center p-10">
             <h1 className="text-5xl text-center">Projects</h1>
             <div className="flex-wrap flex md:w-5/6 xl:w-4/6 mx-auto">
                 {allProjects.map((project: Project) => (
