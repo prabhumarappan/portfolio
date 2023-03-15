@@ -24,7 +24,7 @@ export default function Weather() {
     // TODO: Uncomment this when deploying
     useEffect(() => {
         if (location) {
-            const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location.lat},${location.lon}&aqi=no`;
+            const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location.lat},${location.lon}&aqi=no`;
 
             fetch(apiUrl)
                 .then((res) => res.json())
