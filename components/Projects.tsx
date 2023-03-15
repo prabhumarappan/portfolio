@@ -69,13 +69,14 @@ export default function Projects() {
                             <h2 className="text-4xl mx-auto">
                                 {project.title}
                             </h2>
-                            <a
-                                href={project.github}
-                                className="text-xl"
-                                target="_blank"
-                            >
-                                <BsGithub className="text-4xl" />
-                            </a>
+
+                            <BsGithub className="text-4xl">
+                                <a
+                                    href={project.github}
+                                    className="text-xl"
+                                    target="_blank"
+                                ></a>
+                            </BsGithub>
                         </div>
                         <div className="w-full mt-5 md:flow-root">
                             <Image
