@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface Experience {
+    id: number;
     name: string;
     position: string;
     startDate: string;
@@ -15,6 +16,7 @@ interface Experience {
 
 const experiences = [
     {
+        id: 1,
         name: "Freshworks",
         position: "Senior Software Engineer",
         startDate: "Jan 2021",
@@ -33,6 +35,7 @@ const experiences = [
         img: "/freshworks.jpeg",
     },
     {
+        id: 2,
         name: "Dozee",
         position: "Technical Lead",
         startDate: "Jul 2019",
@@ -53,6 +56,7 @@ const experiences = [
         img: "/dozee.jpeg",
     },
     {
+        id: 3,
         name: "Infratab",
         position: "Software Developer",
         startDate: "Oct 2018",
@@ -73,6 +77,7 @@ const experiences = [
         img: "/infratab.jpeg",
     },
     {
+        id: 4,
         name: "Dozee",
         position: "Software Engineer",
         startDate: "Nov 2016",
@@ -100,7 +105,7 @@ export default function Work() {
                 <div className="pt-5">
                     {experiences.map((experience: Experience) => (
                         <div
-                            key={experience.name}
+                            key={experience.id}
                             className="bg-white rounded-lg shadow-md p-6 mb-6 last:mb-0"
                         >
                             <Link href={experience.linkedIn} target="_blank">
