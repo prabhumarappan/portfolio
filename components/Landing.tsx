@@ -7,7 +7,7 @@ import me from "../public/me.png";
 
 export default function Landing() {
     return (
-        <section className="text-center">
+        <section id="home" className="text-center p-10 pt-28">
             <div className="rounded-full flex">
                 <Image
                     src={me}
