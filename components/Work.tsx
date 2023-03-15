@@ -1,42 +1,141 @@
+import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-import ctran from "../public/ctran.jpg";
-import irc from "../public/irc.jpg";
-import lotr from "../public/lotr.jpeg";
-import cryptoning from "../public/cryptoning.jpeg";
+interface Experience {
+    name: string;
+    position: string;
+    startDate: string;
+    endDate: string;
+    description: string;
+    skills: string[];
+    linkedIn: string;
+    img: string;
+}
+
+const experiences = [
+    {
+        name: "Freshworks",
+        position: "Senior Software Engineer",
+        startDate: "Jan 2021",
+        endDate: "Sep 2021",
+        description: "Worked on the Developer Platform Team",
+        skills: [
+            "Javascript",
+            "Node",
+            "AWS",
+            "Kafka",
+            "Prometheus",
+            "Grafana",
+            "Microservices",
+        ],
+        linkedIn: "https://www.linkedin.com/company/freshworks-inc/",
+        img: "/freshworks.jpeg",
+    },
+    {
+        name: "Dozee",
+        position: "Technical Lead",
+        startDate: "Jul 2019",
+        endDate: "Dec 2020",
+        description: "Lead the Data Processing Team",
+        skills: [
+            "Python",
+            "Docker",
+            "AWS",
+            "Kibana",
+            "Elasticsearch",
+            "Go",
+            "Distributed Systems",
+            "Health Processing Service",
+            "REST API",
+        ],
+        linkedIn: "https://www.linkedin.com/company/dozeehealth/",
+        img: "/dozee.jpeg",
+    },
+    {
+        name: "Infratab",
+        position: "Software Developer",
+        startDate: "Oct 2018",
+        endDate: "Jun 2019",
+        description: "Worked on the Cold Storage App Team",
+        skills: [
+            "Python",
+            "Django",
+            "Azure",
+            "REST API",
+            "MySQL",
+            "Docker",
+            "Ethereum",
+            "CircleCi",
+            "Cordova",
+        ],
+        linkedIn: "https://www.linkedin.com/company/infratab-bangalore/",
+        img: "/infratab.jpeg",
+    },
+    {
+        name: "Dozee",
+        position: "Software Engineer",
+        startDate: "Nov 2016",
+        endDate: "Oct 2018",
+        description: "Worked on the Data Processing Team",
+        skills: [
+            "Python",
+            "Distributed Systems",
+            "Health Processing Service",
+            "HTML/CSS",
+            "REST API",
+        ],
+        linkedIn: "https://www.linkedin.com/company/dozeehealth/",
+        img: "/dozee.jpeg",
+    },
+];
 
 export default function Work() {
     return (
-        <section id="projects" className="text-center p-10 pt-0">
-            <h1 className="text-5xl text-center">Experience</h1>
-            <div className="flex-wrap flex md:w-4/6 mx-auto">
-                <div className="justify-center w-full bg-red-400 m-5 p-5 rounded-md">
-                    <h2 className="text-4xl">CTran Data Pipeline and Visualization</h2>
-                    <div className="w-full mt-5 md:flow-root">
-                        <Image src={ctran} alt="Photo of Prabhu Marappan" className="w-1/3 block md:float-left"></Image>
-                        <p className="w-2/3 sm:pt-5 md:float-right pl-5 text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    </div>
-                </div>
-                <div className="justify-center w-full bg-red-400 m-5 p-5 rounded-md">
-                    <h2 className="text-4xl">IRC Service</h2>
-                    <div className="w-full mt-5 md:flow-root">
-                        <Image src={irc} alt="Photo of Prabhu Marappan" className="w-1/3 block md:float-left"></Image>
-                        <p className="w-2/3 sm:pt-5 md:float-right pl-5 text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    </div>
-                </div>
-                <div className="justify-center w-full bg-red-400 m-5 p-5 rounded-md">
-                    <h2 className="text-4xl">Lord of the Rings (LOTR) SDK</h2>
-                    <div className="w-full mt-5 md:flow-root">
-                        <Image src={lotr} alt="Photo of Prabhu Marappan" className="w-1/3 block md:float-left"></Image>
-                        <p className="w-2/3 sm:pt-5 md:float-right pl-5 text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    </div>
-                </div>
-                <div className="justify-center w-full bg-red-400 m-5 p-5 rounded-md">
-                    <h2 className="text-4xl">Cryptoning</h2>
-                    <div className="w-full mt-5 md:flow-root">
-                        <Image src={cryptoning} alt="Photo of Prabhu Marappan" className="w-1/3 block md:float-left"></Image>
-                        <p className="w-2/3 sm:pt-5 md:float-right pl-5 text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    </div>
+        <section id="work" className="text-center p-10 pt-0">
+            <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+                <h2 className="text-5xl tracking-tight">
+                    Professional Experience
+                </h2>
+                <div className="pt-5">
+                    {experiences.map((experience: Experience) => (
+                        <div
+                            key={experience.name}
+                            className="bg-white rounded-lg shadow-md p-6 mb-6 last:mb-0"
+                        >
+                            <Link href={experience.linkedIn} target="_blank">
+                                <Image
+                                    src={experience.img}
+                                    alt="hello"
+                                    width={50}
+                                    height={50}
+                                    className="mx-auto"
+                                ></Image>
+                                <h3 className="text-2xl font-bold mb-3">
+                                    {experience.name}
+                                </h3>
+                            </Link>
+                            <p className="mb-2">
+                                <strong>{experience.position}</strong>
+                            </p>
+                            <p className="text-sm mb-2">
+                                {experience.startDate} - {experience.endDate}
+                            </p>
+                            <p>{experience.description}</p>
+                            <div className="pt-5">
+                                {experience.skills.map((skill: string) => {
+                                    return (
+                                        <span
+                                            key={skill}
+                                            className="inline-block bg-gray-200 px-3 py-1 text-sm mr-2 mb-2 rounded-full"
+                                        >
+                                            {skill}
+                                        </span>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
