@@ -11,7 +11,7 @@ export default function Projects() {
         <section id="projects" className="text-center p-10 pt-0">
             <h1 className="text-5xl text-center">Projects</h1>
             <div className="flex-wrap flex md:w-4/6 mx-auto">
-                <div className="justify-center w-full bg-blue-400 m-5 p-5 rounded-md shadow-xl">
+                <div className="justify-center w-full bg-white m-5 p-5 rounded-lg shadow-xl">
                     <div className="w-full flex">
                         <h2 className="text-4xl mx-auto">
                             CTran Data Pipeline and Visualization
@@ -41,7 +41,7 @@ export default function Projects() {
                         </p>
                     </div>
                 </div>
-                <div className="justify-center w-full bg-blue-400 m-5 p-5 rounded-md shadow-xl">
+                <div className="justify-center w-full bg-white m-5 p-5 rounded-lg shadow-xl">
                     <div className="w-full flex">
                         <h2 className="text-4xl mx-auto">IRC Service</h2>
                         <a
@@ -71,7 +71,7 @@ export default function Projects() {
                         </p>
                     </div>
                 </div>
-                <div className="justify-center w-full bg-blue-400 m-5 p-5 rounded-md shadow-xl">
+                <div className="justify-center w-full bg-white m-5 p-5 rounded-lg shadow-xl">
                     <div className="w-full flex">
                         <h2 className="text-4xl mx-auto">
                             Lord of the Rings (LOTR) SDK
@@ -103,7 +103,7 @@ export default function Projects() {
                         </p>
                     </div>
                 </div>
-                <div className="justify-center w-full bg-blue-400 m-5 p-5 rounded-md shadow-xl">
+                <div className="justify-center w-full bg-white m-5 p-5 rounded-lg shadow-xl">
                     <div className="w-full flex">
                         <h2 className="text-4xl mx-auto">Cryptoning</h2>
                         <a
