@@ -4,7 +4,6 @@ export default function Navbar() {
     const moveToView = (e: React.MouseEvent<HTMLElement>, ele: string) => {
         e.preventDefault();
         const element = document.getElementById(ele);
-        console.log(e);
         if (element) {
             element.scrollIntoView({ behavior: "smooth" });
         }

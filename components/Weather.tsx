@@ -25,7 +25,6 @@ export default function Weather() {
     useEffect(() => {
         if (location) {
             const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location.lat},${location.lon}&aqi=no`;
-            console.log(apiUrl);
             fetch(apiUrl)
                 .then((res) => res.json())
                 .then((data) => {
@@ -34,8 +33,6 @@ export default function Weather() {
                 .catch((error) => {});
         }
     }, [location]);
-
-    console.log(weatherData);
 
     return (
         <div className="text-xl pl-1">
