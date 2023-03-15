@@ -7,8 +7,9 @@ Live: https://portfolio-prabhumarappan.vercel.app/
 1. Reactjs ([https://reactjs.org/](https://reactjs.org/))
 2. Nextjs ([https://nextjs.org/](https://nextjs.org/))
 3. TailwindCSS ([https://tailwindcss.com/](https://tailwindcss.com/))
-4. Vercel ([https://vercel.com/](https://vercel.com/))
-5. Weather API ([https://www.weatherapi.com/](https://www.weatherapi.com/))
+4. React Icons (https://react-icons.github.io/react-icons/)
+5. Vercel ([https://vercel.com/](https://vercel.com/))
+6. Weather API ([https://www.weatherapi.com/](https://www.weatherapi.com/))
 
 ## Resources Used
 
